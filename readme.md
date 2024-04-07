@@ -37,10 +37,11 @@ For each line feature, the following field will be generated:
 * Line_{i}_ProjY : Y coordinate of the projected data point.
   
 ## Further dev. direction
-### IO
-[ ] Save the result into the gdb.
-[ ] Support shapefile format.
-[ ] Wrap the pp2p.py into a arcgis toolbox (.pyt).
-### Functions
-[ ] Generate the verification plot.
-[ ] Calculate the angle between the azimuth of strike and the azimuth of the profile line. This can be further used to calculate the apparent dip.
+### IO  
+- [ ] Save the result into the gdb.  
+- [ ] Support shapefile format.  
+- [ ] Wrap the pp2p.py into a arcgis toolbox (.pyt).  
+  
+### Functions  
+- [ ] Generate the verification plot.  
+- [ ] Calculate the angle between the azimuth of strike and the azimuth of the profile line. This can be further used to calculate the apparent dip.  
