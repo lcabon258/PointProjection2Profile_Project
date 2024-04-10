@@ -33,7 +33,7 @@ if __name__ == "__main__":
     logging.info("Projecting points to profile.")
     ortho_result = ppt.ortho(profile_arr,dataarr)
     # Save the result
-    outputPath = profile_arr.parents[1]/"pp2p_{gdbPointFc.stem}_{gdbLineFc.stem}.csv" # The directory with the gdb
+    outputPath = gdbLineFc.parents[1]/f"pp2p_{gdbPointFc.stem}_{gdbLineFc.stem}.csv" # The directory with the gdb
     logging.info(f"Saving the result to {outputPath}")
     ortho_result.to_csv(outputPath,index=False)
     logging.info(f"Done.")
