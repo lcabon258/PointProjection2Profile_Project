@@ -6,13 +6,10 @@
 import sys
 import arcpy
 from pathlib import Path
-try:
-    import gdalio as gio
-    import ppt
-except ImportError:
-    arcpy.AddError("cannot find required module")
-    sys.exit(1)
-
+# Add the proc to sys.path
+sys.path.append(str(Path(__file__).parents[1]))
+import gdalio as gio
+import ppt
 class Toolbox(object):
     def __init__(self):
         """Define the toolbox (the name of the toolbox is the name of the
